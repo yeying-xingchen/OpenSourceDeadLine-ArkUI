@@ -11,6 +11,7 @@ export struct AppHeader {
           .fontWeight(FontWeight.Medium)
           .fontColor('#1F2937')
           .lineHeight(24)
+          .margin(14)
           .onClick(() => { this.openRepo(); })
       }
       // 副标题与说明
