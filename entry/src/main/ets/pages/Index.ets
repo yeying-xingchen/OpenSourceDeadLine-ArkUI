@@ -556,10 +556,11 @@ struct Index {
   @Builder
   private renderFooter() {
     Column({ space: 6 }) {
-      Text('华科开放原子开源俱乐部维护')
+      Text('本软件由 华中科技大学开放原子开源俱乐部维护')
         .fontSize(12)
         .fontColor('#4B5563')
         .textAlign(TextAlign.Center);
+      Hyperlink("https://github.com/hust-open-atom-club/open-source-deadlines-openharmony/", "Github")
       if (this.lastUpdated.length > 0) {
         Text(`上次更新：${this.lastUpdated}`).fontSize(11).fontColor('#9CA3AF').textAlign(TextAlign.Center);
       }
@@ -584,7 +585,7 @@ struct Index {
         Button('重试')
           .type(ButtonType.Capsule)
           .fontSize(12)
-          .backgroundColor('#FFFFFF')
+          .backgroundColor($r('sys.color.comp_background_list_card'))
           .border({ width: 1, color: '#DC2626' })
           .fontColor('#B91C1C')
           .onClick(() => {

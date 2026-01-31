@@ -98,13 +98,13 @@ export struct FilterBar {
       .padding(12)
       .borderRadius(12)
       .backgroundColor(Color.White)
-      .width('100%')
+      .width('90%')
 
       // 收藏和清除
       Column() {
         Button(this.showOnlyFavorites ? '仅显示收藏' : '仅显示收藏')
           .type(ButtonType.Capsule)
-          .width('100%')
+          .width('60%')
           .fontSize(14)
           .padding({ left: 12, right: 12, top: 10, bottom: 10 })
           .borderRadius(16)
@@ -118,7 +118,7 @@ export struct FilterBar {
             Blank().layoutWeight(1)
             this.clearAllButton(() => this.onClearAllFilters())
           }
-          .width('100%')
+          .width('60%')
           .padding({ top: 8 })
         }
       }
@@ -202,7 +202,7 @@ export struct FilterBar {
   private expandButton(label: string, expanded: boolean, onClick: () => void) {
     Button(expanded ? `收起${label}` : `更多${label}`)
       .type(ButtonType.Capsule)
-      .width('100%')
+      .width('60%')
       .fontSize(14)
       .padding({ left: 12, right: 12, top: 10, bottom: 10 })
       .borderRadius(16)
@@ -219,7 +219,7 @@ export struct FilterBar {
       .fontSize(14)
       .padding({ left: 12, right: 12, top: 10, bottom: 10 })
       .borderRadius(16)
-      .width('100%')
+      .width('60%')
       .backgroundColor(active ? '#007AFF' : '#F3F4F6')
       .fontColor(active ? '#FFFFFF' : '#111827')
       .border({ width: 1, color: active ? '#007AFF' : '#E5E7EB' })
